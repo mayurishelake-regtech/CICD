@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="criticalTestScripts.ApprovalStatutory">
+        <methods>
+          <include name="rejected_PieChartPeriod"/>
+          <include name="ClosedDelayed_PieChart"/>
+          <include name="NotCompleted_PieChartPeriod"/>
+          <include name="UpcomingPieChartPeriod"/>
+          <include name="complianceCalendar"/>
+          <include name="DetailedreportVsOverduecount"/>
+          <include name="DetailedreportVsRejectedcount"/>
+          <include name="DetailedreportVsCommercialHighcount"/>
+          <include name="browserClosing"/>
+          <include name="Login"/>
+          <include name="BargraphIndustrySpeMediumStatutory"/>
+          <include name="DepartmentSummaryRejected"/>
+          <include name="setBrowser"/>
+          <include name="NCcompletionVsNCOverdueP"/>
+          <include name="inProgress_PieChartPeriod"/>
+          <include name="pendingForReview_PieChart"/>
+          <include name="DepaINPROGRESSR"/>
+          <include name="Overdue_PieChart"/>
+          <include name="DetailedreportVsdashboardNAcount"/>
+          <include name="inProgress_PieChart"/>
+          <include name="DepartmentSummaryNotApplicable"/>
+          <include name="DetailedreportVsCommercialCriticalcount"/>
+          <include name="DetailedreportVsINprocount"/>
+          <include name="riskSummaryClosedTimely"/>
+          <include name="RiskSummaryCriticalStatutory"/>
+          <include name="DetailedreportVsdashboardCloseddealyedcount"/>
+          <include name="rejected_PieChart"/>
+          <include name="riskSummaryCriticalNotCompleted1"/>
+          <include name="pendingForReview_PieChartPeriod"/>
+          <include name="dueToday_PieChart"/>
+          <include name="ClosedTimely_PieChart"/>
+          <include name="DepartmentSummaryOverdue"/>
+          <include name="NotCompleted_PieChart"/>
+          <include name="riskSummaryNotApplicable"/>
+          <include name="DepartmentSummaryAccountStatutory"/>
+          <include name="BargraphIndustrySpeCriticalStatutory"/>
+          <include name="DetailedreportVsPFRcount"/>
+          <include name="Closing"/>
+          <include name="AssignmentReport"/>
+          <include name="DetailedReport"/>
+          <include name="ClosedDelayed_PieChartPeriod"/>
+          <include name="BargraphIndustrySpeHighStatutory"/>
+          <include name="DepartmentSummaPR"/>
+          <include name="DetailedreportVsDueTodaycount"/>
+          <include name="RiskSummaryLowStatutory"/>
+          <include name="NotApplicable_PieChart"/>
+          <include name="ComplianceDocuments"/>
+          <include name="ClosedTimely_PieChartPeriod"/>
+          <include name="RiskSummaryHighStatutory"/>
+          <include name="RiskSummaryMediumStatutory"/>
+          <include name="riskSummaryClosedDelayed"/>
+          <include name="BargraphIndustrySpeLowStatutory"/>
+          <include name="Overdue_PieChartPeriod"/>
+          <include name="DepartmentSummaryClosedDelayed"/>
+          <include name="DepartmentSummaryClosedT"/>
+          <include name="NCcompletionVsNCOverdue"/>
+          <include name="DetailedreportVsdashboardclosedtimelycount"/>
+          <include name="DetailedreportVsdashboardNotCompletedcount"/>
+          <include name="DetailedreportVsCommercialLowcount"/>
+          <include name="DetailedreportVsCommercialMediumcount"/>
+          <include name="NotApplicable_PieChartPeriod"/>
+        </methods>
+      </class> <!-- criticalTestScripts.ApprovalStatutory -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
