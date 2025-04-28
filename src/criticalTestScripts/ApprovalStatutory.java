@@ -440,7 +440,7 @@ public class ApprovalStatutory extends BasePage {
 		Thread.sleep(5000);
 		
 		Actions action = new Actions(getDriver());
-		js.executeScript("window.scrollBy(0,600)");			
+		js.executeScript("window.scrollBy(0,500)");			
 	
 		Thread.sleep(3000);
 		int NotCompletedValue = Integer.parseInt(CFOcountPOM.clickNotCompleted().getText());	//Reading value of 'Not Completed'
@@ -516,7 +516,7 @@ public class ApprovalStatutory extends BasePage {
 			Thread.sleep(5000);
 			Thread.sleep(1000);
 			Actions action = new Actions(getDriver());
-			js.executeScript("window.scrollBy(0,600)");						//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");						//Scrolling down window by 1000 px.
 			
 			Thread.sleep(2000);
 			int ClosedDelayedValue = Integer.parseInt(CFOcountPOM.clickClosedDelayed().getText());	//Reading value of 'After Due Date'
@@ -589,7 +589,7 @@ public class ApprovalStatutory extends BasePage {
 			CFOcountPOM.RefreshNow().click();
 			Thread.sleep(5000);
 			Actions action = new Actions(getDriver());
-			js.executeScript("window.scrollBy(0,600)");						//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");						//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int ClosedTimelyValue = Integer.parseInt(CFOcountPOM.clickClosedTimely().getText());	//Reading value of 'After Due Date'
@@ -665,7 +665,7 @@ public class ApprovalStatutory extends BasePage {
 			CFOcountPOM.RefreshNow().click();
 			Thread.sleep(5000);
 			Actions action = new Actions(getDriver());
-			js.executeScript("window.scrollBy(0,600)");						//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");						//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int NotApplicableValue = Integer.parseInt(CFOcountPOM.clickNotApplicable().getText());	//Reading value of 'After Due Date'
@@ -741,7 +741,7 @@ public class ApprovalStatutory extends BasePage {
 			Thread.sleep(5000);
 			CFOcountPOM.RefreshNow().click();
 			Thread.sleep(5000);
-			js.executeScript("window.scrollBy(0,600)");			//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");			//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int OverdueValue = Integer.parseInt(CFOcountPOM.clickOverdue().getText());	//Reading value of 'Not Completed'
@@ -822,7 +822,7 @@ public class ApprovalStatutory extends BasePage {
 			CFOcountPOM.RefreshNow().click();
 			Thread.sleep(5000);
 			Actions action = new Actions(getDriver());
-			js.executeScript("window.scrollBy(0,600)");			//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");			//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int dueTodayValue = Integer.parseInt(CFOcountPOM.clickdueToday().getText());	//Reading value of 'Not Completed'
@@ -926,7 +926,7 @@ public class ApprovalStatutory extends BasePage {
 			
 			WebDriverWait wait = new WebDriverWait( getDriver(), (40));
 	
-			js.executeScript("window.scrollBy(0,600)");			//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");			//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int pendingForReviewValue = Integer.parseInt(CFOcountPOM.clickpendingForReview().getText());	//Reading value of 'Not Completed'
@@ -1008,7 +1008,7 @@ public class ApprovalStatutory extends BasePage {
 			
 			WebDriverWait wait = new WebDriverWait( getDriver(), (40));
 		
-			js.executeScript("window.scrollBy(0,600)");			//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");			//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int inProgressValue = Integer.parseInt(CFOcountPOM.clickinProgress().getText());	//Reading value of 'Not Completed'
@@ -1097,7 +1097,7 @@ public class ApprovalStatutory extends BasePage {
 		//	ApprovalcountPOM.clickManagement().click();
 			Thread.sleep(5000);
 			Actions action = new Actions(getDriver());
-			js.executeScript("window.scrollBy(0,600)");			//Scrolling down window by 1000 px.
+			js.executeScript("window.scrollBy(0,500)");			//Scrolling down window by 1000 px.
 			
 			Thread.sleep(3000);
 			int rejectedValue = Integer.parseInt(CFOcountPOM.clickRejected().getText());	//Reading value of 'Not Completed'
@@ -3456,7 +3456,7 @@ public class ApprovalStatutory extends BasePage {
 		
 			JavascriptExecutor js = (JavascriptExecutor) getDriver() ;
 			js.executeScript("window.scrollBy(0,3600)");					//Scrolling down window by 2600 px.
-		//	js.executeScript("window.scrollBy(0,600)");
+		//	js.executeScript("window.scrollBy(0,500)");
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='collapsePerformerCalender']")));
 			Thread.sleep(5000);

@@ -99,6 +99,13 @@ public class Login extends BasePage
 		Thread.sleep(3000);
 		LoginPOM.clickSubmit().click();				//Clicked on Sign-in button
 		Thread.sleep(3000);
+		
+		try {
+			getDriver().switchTo().alert().accept();
+			
+		}catch(Exception e) {
+			
+		}
 		if(!username.equalsIgnoreCase("performer@avantis.info"))
 		{
 			try
@@ -117,6 +124,13 @@ public class Login extends BasePage
 				
 			}
 			
+			Thread.sleep(500);
+			try {
+				getDriver().switchTo().alert().accept();
+				
+			}catch(Exception e) {
+				
+			}
 			Thread.sleep(500);
 			try
 			{

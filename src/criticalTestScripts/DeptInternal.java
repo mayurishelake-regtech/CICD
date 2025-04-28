@@ -126,7 +126,7 @@ public class DeptInternal extends BasePage  {
 		}
 	}
 	
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	void Entities() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Entities");
@@ -137,7 +137,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	void LocationCount() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Location");
@@ -149,7 +149,7 @@ public class DeptInternal extends BasePage  {
 	}
 		
 	
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	void clickCategoriesInternal() throws InterruptedException
 	{
 		test = extent.startTest(" Count by Clicking on 'Department'");
@@ -201,7 +201,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 5)
+	@Test(priority = 5)
 	void ClickCompliancesInternal() throws InterruptedException
 	{
 		test = extent.startTest("'Complainces' Count by Clicking on 'Compliances'");
@@ -262,7 +262,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	void clickUsersInternal() throws InterruptedException
 	{
 		test = extent.startTest("'Users' Count by Clicking on 'Users'");
@@ -322,7 +322,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 8)
+	@Test(priority = 8)
 	void SummaryofOverdueCompliances() throws InterruptedException
 	{
 		test = extent.startTest(" Summary of Overdue Compliances Internal");
@@ -373,7 +373,7 @@ public class DeptInternal extends BasePage  {
 		
 	}
 	
-	//@Test(priority = 9)
+	@Test(priority = 9)
 	void ClosedTimely_PieChart() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - 'Closed Timely' Count Verification");
@@ -404,7 +404,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());			//reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(ClosedTimelyValue == total)
 		{
 			test.log(LogStatus.PASS, "'Closed Timely' Compliance Count matches to sum of all risked compliances.");
@@ -414,7 +414,7 @@ public class DeptInternal extends BasePage  {
 		{
 			test.log(LogStatus.FAIL, "'Closed Timely' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Closed Timely' Compliances : "+total+" | Total Sum : "+ClosedTimelyValue);
-		}*/
+		}
 		
 		if(ClosedTimelyValue > 0)
 		{
@@ -469,7 +469,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 10)
+	@Test(priority = 10)
 	void ClosedDelayed_PieChart() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - 'Closed Delayed' Count Verification");
@@ -499,7 +499,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());			//reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(ClosedDelayedValue == total)
 		{
 			test.log(LogStatus.PASS, "'Closed Delayed' Compliance Count matches to sum of all risked compliances.");
@@ -509,7 +509,7 @@ public class DeptInternal extends BasePage  {
 		{
 			test.log(LogStatus.FAIL, "'Closed Delayed' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Closed Delayed' Compliances : "+total+" | Total Sum : "+ClosedDelayedValue);
-		}*/
+		}
 		
 		if(ClosedDelayedValue > 0)
 		{
@@ -565,7 +565,7 @@ public class DeptInternal extends BasePage  {
 	}
 	
 	
-	//@Test(priority = 11)
+	@Test(priority = 11)
 	void NotCompleted_PieChart() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - 'Not Completed' Count Verification");
@@ -595,7 +595,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());				//Reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(NotCompletedValue == total)
 		{
 			test.log(LogStatus.PASS, "'Not Completed' Compliance Count matches to sum of all risked compliances.");
@@ -606,7 +606,7 @@ public class DeptInternal extends BasePage  {
 			test.log(LogStatus.FAIL, "'Not Completed' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Not Completed' Compliances : "+total+" | Total Sum : "+NotCompletedValue);
 		}
-		*/
+		
 		if(NotCompletedValue > 0)
 		{
 			if(critical >= 0)
@@ -660,7 +660,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 12)
+	@Test(priority = 12)
 	void NotApplicable_PieChartIN() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - 'Not Applicable' Count Verification");
@@ -690,7 +690,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());			//reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(ClosedDelayedValue == total)
 		{
 			test.log(LogStatus.PASS, "'Not Applicable' Compliance Count matches to sum of all risked compliances.");
@@ -700,7 +700,7 @@ public class DeptInternal extends BasePage  {
 		{
 			test.log(LogStatus.FAIL, "'Not Applicable' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Not Applicable' Compliances : "+total+" | Total Sum : "+ClosedDelayedValue);
-		}*/
+		}
 		
 		if(ClosedDelayedValue > 0)
 		{
@@ -755,7 +755,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 		
-	//@Test(priority = 13)
+	@Test(priority = 13)
 	void Overdue_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - 'Overdue' Count Verification");
@@ -785,7 +785,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());				//Reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(OverdueValue == total)
 		{
 			test.log(LogStatus.PASS, "'Overdue' Compliance Count matches to sum of all risked compliances.");
@@ -796,7 +796,7 @@ public class DeptInternal extends BasePage  {
 			test.log(LogStatus.FAIL, "'Overdue' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Overdue' Compliances : "+total+" | Total Sum : "+OverdueValue);
 		}
-		*/
+		
 		if(OverdueValue > 0)
 		{
 			if(critical >= 0)
@@ -853,7 +853,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 14)
+	@Test(priority = 14)
 	void PFR_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status- 'Pending For Review' Count Verification");
@@ -886,7 +886,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());				//Reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(OverdueValue == total)
 		{
 			test.log(LogStatus.PASS, "'Pending For Review' Compliance Count matches to sum of all risked compliances.");
@@ -897,7 +897,7 @@ public class DeptInternal extends BasePage  {
 			test.log(LogStatus.FAIL, "'Pending For Review' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Pending For Review' Compliances : "+total+" | Total Sum : "+OverdueValue);
 		}
-		*/
+		
 		if(OverdueValue > 0)
 		{
 			if(critical > 0)
@@ -954,7 +954,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 15)
+	@Test(priority = 15)
 	void inProgress_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status- 'In Progress' Count Verification");
@@ -987,7 +987,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());				//Reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(OverdueValue == total)
 		{
 			test.log(LogStatus.PASS, "'Pending For Review' Compliance Count matches to sum of all risked compliances.");
@@ -998,7 +998,7 @@ public class DeptInternal extends BasePage  {
 			test.log(LogStatus.FAIL, "'Pending For Review' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Pending For Review' Compliances : "+total+" | Total Sum : "+OverdueValue);
 		}
-		*/
+		
 		if(OverdueValue > 0)
 		{
 			if(critical > 0)
@@ -1055,7 +1055,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 16)
+	@Test(priority = 16)
 	void Rejected_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status- ' Rejected' Count Verification");
@@ -1088,7 +1088,7 @@ public class DeptInternal extends BasePage  {
 		int low = Integer.parseInt(CFOcountPOM.readLow().getText());				//Reading Low risk count.
 		
 		int total = critical + high + medium + low;
-		/*
+		
 		if(OverdueValue == total)
 		{
 			test.log(LogStatus.PASS, "'Rejected' Compliance Count matches to sum of all risked compliances.");
@@ -1098,7 +1098,7 @@ public class DeptInternal extends BasePage  {
 		{
 			test.log(LogStatus.FAIL, "'Rejected' Compliance Count doesn't matches to sum of all risked compliances.");
 			test.log(LogStatus.FAIL, "Total 'Rejected' Compliances : "+total+" | Total Sum : "+OverdueValue);
-		}*/
+		}
 		
 		if(OverdueValue > 0)
 		{
@@ -1156,7 +1156,7 @@ public class DeptInternal extends BasePage  {
 		extent.flush();
 	}
 	
-	//@Test(priority = 17)
+	@Test(priority = 17)
 		void DepartmentSummaryInternal() throws InterruptedException
 		{
 			Thread.sleep(500);		

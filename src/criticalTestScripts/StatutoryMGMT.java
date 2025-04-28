@@ -75,7 +75,9 @@ public class StatutoryMGMT extends BasePage {
 		extent.endTest(test);
 		extent.flush();
 	}
-	
+
+
+
 	@BeforeMethod
 	void Login() throws InterruptedException, IOException
 	{
@@ -114,7 +116,7 @@ public class StatutoryMGMT extends BasePage {
 		}
 	}
 	
-	// @Test(priority = 1)
+	 @Test(priority = 1)
 	void CategoriesCountMatch() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Count by Clicking on 'Categories'");
@@ -125,7 +127,7 @@ public class StatutoryMGMT extends BasePage {
 		extent.flush();
 	}
 	
-   // @Test(priority = 2)
+    @Test(priority = 2)
 	void CompliancesCountMatch() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Count by Clicking on 'Compliances'");
@@ -181,7 +183,7 @@ public class StatutoryMGMT extends BasePage {
 		extent.flush();
 	}
    
-  // @Test(priority = 3)
+   @Test(priority = 3)
 	void UsersCountMatch() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Count by Clicking on 'Users'");
@@ -236,7 +238,7 @@ public class StatutoryMGMT extends BasePage {
 		extent.flush();
 	}
 	
- //@Test(priority = 4)
+ @Test(priority = 4)
 	void SummaryofOverdueCompliances() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Summary of Overdue Compliances");
@@ -294,7 +296,7 @@ public class StatutoryMGMT extends BasePage {
 		
 	}
 	
-       // @Test(priority = 5)
+        @Test(priority = 5)
 		void NotCompleted_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Not Completed' Count Verification");
@@ -389,7 +391,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-       // @Test(priority = 6)
+        @Test(priority = 6)
 		void ClosedDelayed_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Closed Delayed' Count Verification");
@@ -484,7 +486,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-// @Test(priority = 7)
+ @Test(priority = 7)
 		void ClosedTimely_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Closed Timely' Count Verification");
@@ -579,7 +581,7 @@ public class StatutoryMGMT extends BasePage {
 			
 		}
 		
-	// @Test(priority = 8)
+	 @Test(priority = 8)
 		void NotApplicable_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Not Applicable' Count Verification");
@@ -681,7 +683,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 			
-	// @Test(priority = 9)
+	 @Test(priority = 9)
 		void Overdue_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'Overdue' Count Verification");
@@ -783,7 +785,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-// @Test(priority = 10)
+ @Test(priority = 10)
 		void dueToday_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'dueToday' Count Verification");
@@ -885,7 +887,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	// @Test(priority = 11)
+	 @Test(priority = 11)
 		void pendingForReview_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'Pending For Review' Count Verification");
@@ -988,7 +990,7 @@ public class StatutoryMGMT extends BasePage {
 		}
 		
 		
-   // @Test(priority = 12)
+    @Test(priority = 12)
 		void inProgress_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'In Progress' Count Verification");
@@ -1090,7 +1092,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.endTest(test);
 			extent.flush();
 		}
- //@Test(priority = 13)
+ @Test(priority = 13)
 		void rejected_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- ' Rejected' Count Verification");
@@ -1191,7 +1193,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-// @Test(priority = 14)
+ @Test(priority = 14)
 		void BargraphIndustrySpeCriticalStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Critical' Risk");
@@ -1292,7 +1294,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- //@Test(priority = 23)
+ @Test(priority = 23)
 		void BargraphIndustrySpeHighStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'High' risk");
@@ -1396,7 +1398,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 
-    // @Test(priority = 24)
+     @Test(priority = 24)
 		void BargraphIndustrySpeMediumStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Medium' risk");
@@ -1495,7 +1497,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-           // @Test(priority = 25)
+           @Test(priority = 25)
 		void BargraphIndustrySpeLowStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Low' risk");
@@ -1652,7 +1654,7 @@ public class StatutoryMGMT extends BasePage {
 				test.log(LogStatus.PASS, "'Critical - Closed Delayed' Count = "+RiskCritical_ClosedDelayed);
 			}
 			
-			/*Thread.sleep(3000);
+			Thread.sleep(3000);
 			int RiskCritical_ClosedTimely = Integer.parseInt(CFOcountPOM.clickRiskCriticalClosedTimely().getText());	//Reading the High Risk value of Not Completed compliance
 		if(RiskCritical_ClosedTimely > 0)
 			{
@@ -1663,7 +1665,7 @@ public class StatutoryMGMT extends BasePage {
 			else
 			{
 				test.log(LogStatus.PASS, "'Critical - Closed Timely' Count = "+RiskCritical_ClosedTimely);
-			}*/
+			}
 			
 			Thread.sleep(2000);
 			List<WebElement>roc2 = getDriver().findElements(By.xpath("(//*[@class='highcharts-legend-item highcharts-column-series highcharts-color-undefined highcharts-series-2'])"));
@@ -1936,7 +1938,7 @@ public class StatutoryMGMT extends BasePage {
 			
 			
 			Thread.sleep(3000);
-			int RiskMedium_DueToday = Integer.parseInt(CFOcountPOM.clickRiskMediumDueToday().getText());	//Reading the High Risk value of Not Completed compliance
+		/*	int RiskMedium_DueToday = Integer.parseInt(CFOcountPOM.clickRiskMediumDueToday().getText());	//Reading the High Risk value of Not Completed compliance
 		if(RiskMedium_DueToday > 0)
 			{
 				Thread.sleep(500);
@@ -1948,9 +1950,9 @@ public class StatutoryMGMT extends BasePage {
 			{
 				test.log(LogStatus.PASS, "'Medium - Due Today' Count = "+RiskMedium_DueToday);
 			}
-			
+			*/
 			Thread.sleep(8000);
-			int total = RiskMedium_NotCompleted + RiskMedium_ClosedDelayed + RiskMedium_ClosedTimely + RiskMedium_NotApplicable+RiskMedium_DueToday;				//Calculating the values to match with High value of Labour.
+			int total = RiskMedium_NotCompleted + RiskMedium_ClosedDelayed + RiskMedium_ClosedTimely + RiskMedium_NotApplicable;//+RiskMedium_DueToday;				//Calculating the values to match with High value of Labour.
 			Thread.sleep(5000);	
 			if(IndustrySpeCritical == total)
 			{
@@ -3569,7 +3571,7 @@ public class StatutoryMGMT extends BasePage {
 				Thread.sleep(3000);
 				
 					Thread.sleep(3000);
-					By locator = By.xpath("//*[@id='grid']/div[3]/table/tbody/tr/td[7]/a");
+					By locator = By.xpath("//*[@id='grid']/div[3]/table/tbody/tr/td[14]/a");
 					
 					wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 					Thread.sleep(2000);

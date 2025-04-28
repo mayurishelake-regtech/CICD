@@ -2814,4 +2814,6 @@ public class DeptStaExcluding extends BasePage{
 	  	
 	  //cmd to start jenkins	java -jar jenkins.war --httpPort=9090
 	  //	Browse to http://localhost:9090
+	 // 	ssh-weq22
+	 // ssh key 	C:\Users\mayurig/.ssh/id_ed25519
 }

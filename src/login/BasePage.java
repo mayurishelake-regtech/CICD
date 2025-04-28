@@ -340,8 +340,10 @@ import performer.OverduePOM;
         }
 		
 	}
-	
-	
+/*	1) RND ci/cd pipeline for Jenkins Pipeline
+	2)Modify the script of secretarial product on Dot Net live Testing Link.
+3)Modify the scripts of compliance product
+*/	
 	
 
 	public void closeBrowser() {

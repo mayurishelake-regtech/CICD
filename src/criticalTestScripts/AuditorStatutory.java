@@ -121,7 +121,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 	
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	void NotCompleted_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Not Completed' Count Verification");
@@ -209,7 +209,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	void ClosedDelayed_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Closed Delayed' Count Verification");
@@ -295,7 +295,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 4)
+	@Test(priority = 4)
 	void ClosedTimely_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Closed Timely' Count Verification");
@@ -381,7 +381,7 @@ public class AuditorStatutory extends BasePage {
 		
 	}
 	
-	//@Test(priority = 5)
+	@Test(priority = 5)
 	void NotApplicable_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Not Applicable' Count Verification");
@@ -477,7 +477,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 		
-	//@Test(priority = 6)
+	@Test(priority = 6)
 	void Overdue_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'Overdue' Count Verification");
@@ -570,7 +570,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	void dueToday_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'dueToday' Count Verification");
@@ -664,7 +664,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 8)
+	@Test(priority = 8)
 	void pendingForReview_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'Pending For Review' Count Verification");
@@ -757,7 +757,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 9)
+	@Test(priority = 9)
 	void inProgress_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'In Progress' Count Verification");
@@ -851,7 +851,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 
-	//@Test(priority = 10)
+	@Test(priority = 10)
 	void rejected_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- ' Rejected' Count Verification");
@@ -944,7 +944,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-    //@Test(priority = 11)
+    @Test(priority = 11)
 	void BargraphIndustrySpeCriticalStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Critical' Risk");
@@ -970,13 +970,13 @@ public class AuditorStatutory extends BasePage {
 		
 		Thread.sleep(1000);
 		CFOcountPOM.clickIndustrySpeCriticalM().click();					//Clicking on High bar of Labour  
-		
+		Thread.sleep(3000);
 		Thread.sleep(500);
 		int ClosedTimely = Integer.parseInt(CFOcountPOM.clickBarClosedTimely().getText());			//reading Closed Timely count.
 		int ClosedDelayed = Integer.parseInt(CFOcountPOM.clickBarClosedDelayed().getText());	//reading Closed Delayed count.
 		int NotCompleted = Integer.parseInt(CFOcountPOM.clickBarNotCompleted().getText());	//reading Not Completed count.
 		int NotApplicable = Integer.parseInt(CFOcountPOM.clickBarNotApplicable().getText());	//reading Not Applicable count.
-		
+		Thread.sleep(3000);
 		int total = ClosedTimely + ClosedDelayed + NotCompleted + NotApplicable;				//Calculating the values to match with High value of Labour.
 		if(IndustrySpeCritical == total)
 		{
@@ -1045,7 +1045,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 	
-	//@Test(priority = 12)
+	@Test(priority = 12)
 	void BargraphIndustrySpeHighStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'High' risk");
@@ -1150,7 +1150,7 @@ public class AuditorStatutory extends BasePage {
 	}
 
 	
-    //@Test(priority = 13)
+    @Test(priority = 13)
 
 	void BargraphIndustrySpeMediumStatutory() throws InterruptedException, IOException
 	{
@@ -1250,7 +1250,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-  //@Test(priority = 14)
+  @Test(priority = 14)
 
 	void BargraphIndustrySpeLowStatutory() throws InterruptedException, IOException
 	{
@@ -1354,7 +1354,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 15)
+	@Test(priority = 15)
 	void RiskSummaryCriticalStatutory() throws InterruptedException, IOException
 	{
 		Thread.sleep(2000);
@@ -1474,7 +1474,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 16)
+	@Test(priority = 16)
 	void RiskSummaryHighStatutory() throws InterruptedException, IOException
 	{		
 		test = extent.startTest("Risk Summary - 'High' Count Verification");
@@ -1597,7 +1597,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 17)
+	@Test(priority = 17)
 
 	void RiskSummaryMediumStatutory() throws InterruptedException, IOException
 	{
@@ -1685,7 +1685,7 @@ public class AuditorStatutory extends BasePage {
 		
 		
 		Thread.sleep(3000);
-		int RiskMedium_DueToday = Integer.parseInt(CFOcountPOM.clickRiskMediumDueToday().getText());	//Reading the High Risk value of Not Completed compliance
+	/*	int RiskMedium_DueToday = Integer.parseInt(CFOcountPOM.clickRiskMediumDueToday().getText());	//Reading the High Risk value of Not Completed compliance
 		if(RiskMedium_DueToday > 0)
 		{
 			Thread.sleep(500);
@@ -1696,10 +1696,10 @@ public class AuditorStatutory extends BasePage {
 		else
 		{
 			test.log(LogStatus.PASS, "'Medium - Due Today' Count = "+RiskMedium_DueToday);
-		}
+		}*/
 		
 		Thread.sleep(8000);
-		int total = RiskMedium_NotCompleted + RiskMedium_ClosedDelayed + RiskMedium_ClosedTimely + RiskMedium_NotApplicable+RiskMedium_DueToday;				//Calculating the values to match with High value of Labour.
+		int total = RiskMedium_NotCompleted + RiskMedium_ClosedDelayed + RiskMedium_ClosedTimely + RiskMedium_NotApplicable;//+RiskMedium_DueToday;				//Calculating the values to match with High value of Labour.
 		Thread.sleep(5000);	
 		if(IndustrySpeCritical == total)
 		{
@@ -1719,7 +1719,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 18)
+	@Test(priority = 18)
 
 	void RiskSummaryLowStatutory() throws InterruptedException, IOException
 	{		
@@ -1810,7 +1810,7 @@ public class AuditorStatutory extends BasePage {
 		}
 		
 		Thread.sleep(3000);
-		int RiskLow_DueToday = Integer.parseInt(CFOcountPOM.clickRiskLowDueToday().getText());	//Reading the High Risk value of Not Completed compliance
+	/*	int RiskLow_DueToday = Integer.parseInt(CFOcountPOM.clickRiskLowDueToday().getText());	//Reading the High Risk value of Not Completed compliance
 		if(RiskLow_DueToday > 0)
 		{
 			Thread.sleep(500);
@@ -1822,9 +1822,9 @@ public class AuditorStatutory extends BasePage {
 		{
 			test.log(LogStatus.PASS, "'Low - Due Today' Count = "+RiskLow_DueToday);
 		}
-		
+		*/
 		Thread.sleep(8000);
-		int total = RiskLow_NotCompleted + RiskLow_ClosedDelayed + RiskLow_ClosedTimely + RiskLow_NotApplicable+RiskLow_DueToday;				//Calculating the values to match with High value of Labour.
+		int total = RiskLow_NotCompleted + RiskLow_ClosedDelayed + RiskLow_ClosedTimely + RiskLow_NotApplicable;//+RiskLow_DueToday;				//Calculating the values to match with High value of Labour.
 		Thread.sleep(5000);	
 		if(IndustrySpeCritical == total)
 		{
@@ -1844,7 +1844,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 19)
+	@Test(priority = 19)
 
 	void DepartmentSummaryFinanceStatutory() throws InterruptedException, IOException
 	{
@@ -1860,12 +1860,12 @@ public class AuditorStatutory extends BasePage {
 		int IndustrySpeCritical = Integer.parseInt(Admin);	
 		
 		Thread.sleep(4000);
-		String NotCompleted = CFOcountPOM.clickAdminOverdueA().getText();			//Reading the Overdue value of Human Resource
+		String NotCompleted = CFOcountPOM.clickComplianceIsecOverdueDemo().getText();			//Reading the Overdue value of Human Resource
 		NotCompleted = NotCompleted.replaceAll(" ","");									//Removing all white spaces from string. 
 		int Overdue = Integer.parseInt(NotCompleted);						
 		if(Overdue > 0)
 		{
-			CFOcountPOM.clickAdminOverdueA().click();
+			CFOcountPOM.clickComplianceIsecOverdueDemo().click();
 			Thread.sleep(500);
 			AuditorcountPOM.RiskGraphCount1( test, "Overdue", Overdue, "Statutory");
 		}
@@ -1880,14 +1880,14 @@ public class AuditorStatutory extends BasePage {
 		Thread.sleep(4000);
 		
 		Thread.sleep(500);
-		String ClosedDelayed = CFOcountPOM.clickAdminClosedDelayed().getText();	//Reading the Closed Delayed value of Human Resource
+		String ClosedDelayed = CFOcountPOM.clickHumanClosedDelayed().getText();	//Reading the Closed Delayed value of Human Resource
 		//ClosedDelayed = ClosedDelayed.replaceAll(" ","");								//Removing all white spaces from string. 
 		int Closed_Delayed = Integer.parseInt(ClosedDelayed);	
 	//	int Closed_Delayed = Integer.parseInt(CFOcountPOM.clickHumanClosedDelayed().getText());	//Reading the High Risk value of Not Completed compliance
 
 		if(Closed_Delayed > 0)
 		{
-			CFOcountPOM.clickAdminClosedDelayed().click();
+			CFOcountPOM.clickHumanClosedDelayed().click();
 			Thread.sleep(2000);
 			AuditorcountPOM.RiskGraphCount2( test, "Closed Delayed", Closed_Delayed, "Statutory");
 		}
@@ -1900,12 +1900,12 @@ public class AuditorStatutory extends BasePage {
 		  roc1.click();
 		
 		Thread.sleep(500);
-		String ClosedTimely = CFOcountPOM.clickAccountClosedTimelyA1().getText();		//Reading the Closed Timely value of Human Resource
+		String ClosedTimely = CFOcountPOM.clickHumanClosedTimelym().getText();		//Reading the Closed Timely value of Human Resource
 		ClosedTimely = ClosedTimely.replaceAll(" ","");									//Removing all white spaces from string. 
 		int Closed_Timely = Integer.parseInt(ClosedTimely);						
 		if(Closed_Timely > 0)
 		{
-			CFOcountPOM.clickAccountClosedTimelyA().click();
+			CFOcountPOM.clickHumanClosedTimelym().click();
 			Thread.sleep(500);
 			AuditorcountPOM.RiskGraphCount2( test, "Closed Timely", Closed_Timely, "Statutory");
 		}
@@ -1918,12 +1918,12 @@ public class AuditorStatutory extends BasePage {
 		
 		Thread.sleep(3000);
 		Thread.sleep(2000);
-		String PendingReview = CFOcountPOM.clickAdminPendingReviewIn().getText();	//Reading the Pending For Review value of Human Resource
+		String PendingReview = CFOcountPOM.clickAccountPendingReview().getText();	//Reading the Pending For Review value of Human Resource
 		PendingReview = PendingReview.replaceAll(" ","");								//Removing all white spaces from string. 
 		int Pending_Review = Integer.parseInt(PendingReview);						
 		if(Pending_Review > 0)
 		{
-			CFOcountPOM.clickAdminPendingReviewIn().click();
+			CFOcountPOM.clickAccountPendingReview().click();
 			Thread.sleep(2000);
 			AuditorcountPOM.RiskGraphCount2( test, "Pending For Review", Pending_Review, "Statutory");
 		}
@@ -1935,12 +1935,12 @@ public class AuditorStatutory extends BasePage {
 		WebElement PR = getDriver().findElement(By.cssSelector("#highcharts-12 > svg > g.highcharts-legend > g > g > g.highcharts-legend-item.highcharts-column-series.highcharts-color-undefined.highcharts-series-3 > rect"));
 		PR.click();
 			Thread.sleep(500);
-			String InProgress = CFOcountPOM.clickAdminInprogress().getText();	//Reading the Pending For Review value of Human Resource
+			String InProgress = CFOcountPOM.clickFinanceInProgressInternal().getText();	//Reading the Pending For Review value of Human Resource
 			InProgress = InProgress.replaceAll(" ","");								//Removing all white spaces from string. 
 			int In_Progress = Integer.parseInt(InProgress);						
 			if(In_Progress > 0)
 			{
-				CFOcountPOM.clickAdminInprogress().click();
+				CFOcountPOM.clickFinanceInProgressInternal().click();
 				AuditorcountPOM.RiskGraphCount2( test, "InProgress", In_Progress, "Statutory");
 			}
 			else
@@ -1951,12 +1951,12 @@ public class AuditorStatutory extends BasePage {
 			IP.click();
 			
 			Thread.sleep(500);
-			String Rejected = CFOcountPOM.clickAdminInRejected().getText();	//Reading the Pending For Review value of Human Resource
+			String Rejected = CFOcountPOM.clickFinanceRejectedInternal().getText();	//Reading the Pending For Review value of Human Resource
 			Rejected = Rejected.replaceAll(" ","");								//Removing all white spaces from string. 
 			int R_ejected = Integer.parseInt(Rejected);						
 			if(R_ejected > 0)
 			{
-				CFOcountPOM.clickAdminInRejected().click();
+				CFOcountPOM.clickFinanceRejectedInternal().click();
 				AuditorcountPOM.RiskGraphCount2( test, "Rejected", R_ejected, "Statutory");
 			}
 			else
@@ -1964,12 +1964,12 @@ public class AuditorStatutory extends BasePage {
 				test.log(LogStatus.PASS, "Rejected Compliance Count = "+ R_ejected + ".");
 			}
 			Thread.sleep(500);
-			String NotApplicable = CFOcountPOM.clickAdminNotApplicable().getText();	//Reading the Pending For Review value of Human Resource
+			String NotApplicable = CFOcountPOM.clickComplianceIsecNotApplicableDemo().getText();	//Reading the Pending For Review value of Human Resource
 			NotApplicable = NotApplicable.replaceAll(" ","");								//Removing all white spaces from string. 
 			int Not_Applicable = Integer.parseInt(NotApplicable);						
 			if(Not_Applicable > 0)
 			{
-				CFOcountPOM.clickAdminNotApplicable().click();
+				CFOcountPOM.clickComplianceIsecNotApplicableDemo().click();
 				AuditorcountPOM.RiskGraphCount2( test, "Not Applicable", Not_Applicable, "Statutory");
 			}
 			else
@@ -2015,7 +2015,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 20)
+	@Test(priority = 20)
 
 	void NotCompleted_PieChartPe() throws InterruptedException, IOException
 	{
@@ -2136,7 +2136,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 21)
+	@Test(priority = 21)
 
 	void ClosedDelayed_PieChartPe() throws InterruptedException, IOException
 	{
@@ -2259,7 +2259,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 22)
+	@Test(priority = 22)
 
 	void ClosedTimely_PieChartPe() throws InterruptedException, IOException
 	{
@@ -2383,7 +2383,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 23)
+	@Test(priority = 23)
 
 	void NotApplicable_PieChartPeriod() throws InterruptedException, IOException
 	{
@@ -2506,7 +2506,7 @@ public class AuditorStatutory extends BasePage {
 		
 	}
 		
-	//@Test(priority = 24)
+	@Test(priority = 24)
 
 	void UpcomingPieChartPeriod() throws InterruptedException, IOException
 	{
@@ -2663,7 +2663,7 @@ public class AuditorStatutory extends BasePage {
 	
 
 
-	//@Test(priority = 25)
+	@Test(priority = 25)
 
 	void Overdue_PieChartperiod() throws InterruptedException, IOException
 	{
@@ -2792,7 +2792,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 26)
+	@Test(priority = 26)
 
 	void dueToday_PieChartPeriod() throws InterruptedException, IOException
 	{
@@ -2920,7 +2920,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 27)
+	@Test(priority = 27)
 
 	void pendingForReview_PieChartPeriod() throws InterruptedException, IOException
 	{
@@ -3049,7 +3049,7 @@ public class AuditorStatutory extends BasePage {
 	}
 	
 
-	//@Test(priority = 28)
+	@Test(priority = 28)
 
 	void inProgress_PieChartPeriod() throws InterruptedException, IOException
 	{
@@ -3176,7 +3176,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 29)
+	@Test(priority = 29)
 
 	void rejected_PieChartPeriod() throws InterruptedException, IOException
 	{
@@ -3302,7 +3302,7 @@ public class AuditorStatutory extends BasePage {
 		extent.flush();
 	}
 	
-	  //@Test(priority = 30)
+	 @Test(priority = 30)
 		void DetailedReport() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Detailed Report Count Verification");
@@ -3313,7 +3313,7 @@ public class AuditorStatutory extends BasePage {
 			extent.flush();
 		}
 		
-		//@Test(priority = 31) 
+		@Test(priority = 31) 
 		void SMETAReport() throws InterruptedException, IOException
 		{
 			test = extent.startTest("My Reports - SMETA Report Verification");
@@ -3337,7 +3337,7 @@ public class AuditorStatutory extends BasePage {
 			extent.flush();
 		}
 	  
-		//@Test(priority = 60)
+		@Test(priority = 60)
 		void AssignmentReport() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Assignment Report verification");
@@ -3348,7 +3348,7 @@ public class AuditorStatutory extends BasePage {
 			extent.flush();
 		}
 		
-	//@Test(priority = 74)
+	@Test(priority = 74)
 		void ComplianceDocuments() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Compliance Documents  verification");
@@ -3360,7 +3360,7 @@ public class AuditorStatutory extends BasePage {
 					extent.flush();
 		}
 		
-		//@Test(priority = 75)
+		@Test(priority = 75)
 		void NCcompletionVsNCOverdue() throws InterruptedException {
 			test=extent.startTest("Performer Summary Completion Status(Not Completed) and Not Completed Status graph count Verification");
 			AuditorcountPOM.NCcompletionVsNCOverdue(test);
@@ -3368,7 +3368,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		// @Test(priority = 76)
+		 @Test(priority = 76)
 		void NCcompletionVsNCOverdueP() throws InterruptedException {
 			test=extent.startTest("Performer Summary(Due for the period) Completion Status(Not Completed) and Not Completed Status graph count Verification");
 			AuditorcountPOM.NCcompletionVsNCOverdueP(test);
@@ -3385,7 +3385,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		// @Test(priority = 80)
+		 @Test(priority = 80)
 		void DetailedreportVsdashboardCloseddealyedcount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Completion Status - Closed Delayed dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsdashboardCloseddealyedcountUp(test,"Statutory");
@@ -3393,7 +3393,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-	//@Test(priority = 81)
+	@Test(priority = 81)
 		void DetailedreportVsdashboardclosedtimelycount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Completion Status - Closed Timely dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsdashboardclosedtimelycountUp(test,"Statutory");
@@ -3401,7 +3401,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 	
-	// @Test(priority = 82)//19/03/2025
+	 @Test(priority = 82)//19/03/2025
 		void DetailedreportVsdashboardNAcount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Completion Status - Not Applicable dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsdashboardNAcountUp(test,"Statutory");
@@ -3409,7 +3409,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-	//@Test(priority = 83)
+	@Test(priority = 83)
 		void DetailedreportVsOverduecount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Not Completed Status - Overdue dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsOverduecountUp(test,"Statutory");
@@ -3417,7 +3417,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		 //@Test(priority = 84)
+		 @Test(priority = 84)
 		void DetailedreportVsDueTodaycount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Not Completed Status - DueToday dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsDueTodaycountUp(test,"Statutory");
@@ -3425,7 +3425,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		 //@Test(priority = 85)
+		 @Test(priority = 85)
 		void DetailedreportVsPFRcount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Not Completed Status - Pending For Review dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsPFRcountUp(test,"Statutory");
@@ -3433,7 +3433,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		//@Test(priority = 86)
+		@Test(priority = 86)
 		void DetailedreportVsINprocount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Not Completed Status - In Progress dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsINprocountUp(test,"Statutory");
@@ -3441,7 +3441,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		 //@Test(priority = 87)
+		 @Test(priority = 87)
 		void DetailedreportVsRejectedcount() throws InterruptedException {
 			test=extent.startTest("Performer Summary Not Completed Status - Rejected dashboard count match with Detailed Report Count Verification");
 			AuditorcountPOM.DetailedreportVsRejectedcountUp(test,"Statutory");
@@ -3449,7 +3449,7 @@ public class AuditorStatutory extends BasePage {
 	        extent.flush();
 	    }
 		
-		//@Test(priority =88) //20/03/2025
+		@Test(priority =88) //20/03/2025
 			void DetailedreportVsCommercialCriticalcount() throws InterruptedException {
 				test=extent.startTest("Completion Status - Overall Functions - Commercial - Critial dashboard count match with Detailed Report Count Verification");
 				AuditorcountPOM.DetailedreportVsCommercialCriticalcount(test,"Statutory");
@@ -3457,7 +3457,7 @@ public class AuditorStatutory extends BasePage {
 		        extent.flush();
 		    }
 		
-			 //@Test(priority = 89)
+			 @Test(priority = 89)
 			void DetailedreportVsCommercialHighcount() throws InterruptedException {
 				test=extent.startTest("Completion Status - Overall Functions - Commercial - High dashboard count match with Detailed Report Count Verification");
 				AuditorcountPOM.DetailedreportVsCommercialHighcount(test,"Statutory");
@@ -3465,7 +3465,7 @@ public class AuditorStatutory extends BasePage {
 		        extent.flush();
 		    }
 			
-			//@Test(priority = 90)
+			@Test(priority = 90)
 			void DetailedreportVsCommercialMediumcount() throws InterruptedException {
 				test=extent.startTest("Completion Status - Overall Functions - Commercial - Medium dashboard count match with Detailed Report Count Verification");
 				AuditorcountPOM.DetailedreportVsCommercialMediumcount(test,"Statutory");
@@ -3481,7 +3481,7 @@ public class AuditorStatutory extends BasePage {
 		        extent.flush();
 		    }
 		
-			//@Test(priority = 92)
+			@Test(priority = 92)
 				void riskSummaryCriticalNotCompleted1() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Risk summary Not Completed dashboard count match with Detailed Report Count Verification");
@@ -3491,7 +3491,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 93)
+				 @Test(priority = 93)
 				void riskSummaryClosedDelayed() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Risk summary Closed Delayed dashboard count match with Detailed Report Count Verification");
@@ -3501,7 +3501,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 94)
+				 @Test(priority = 94)
 				void riskSummaryClosedTimely() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Risk summary Closed Timely dashboard count match with Detailed Report Count Verification");
@@ -3511,7 +3511,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				// @Test(priority = 95)
+				 @Test(priority = 95)
 				void riskSummaryNotApplicable() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Risk summary Not Applicable dashboard count match with Detailed Report Count Verification");
@@ -3521,7 +3521,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 96)
+				 @Test(priority = 96)
 				void DepartmentSummaryOverdue() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Department Summary Overdue dashboard count match with Detailed Report Count Verification");
@@ -3531,7 +3531,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 97)
+				 @Test(priority = 97)
 				void DepartmentSummaryClosedDelayed() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Department Summary Closed Delayed dashboard count match with Detailed Report Count Verification");
@@ -3541,7 +3541,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 98)
+				 @Test(priority = 98)
 				void DepartmentSummaryClosedT() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Department Summary Closed Timely dashboard count match with Detailed Report Count Verification");
@@ -3561,7 +3561,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 100)
+				 @Test(priority = 100)
 				void DepaINPROGRESSR() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Department Summary In Progress dashboard count match with Detailed Report Count Verification");
@@ -3571,7 +3571,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 101)
+				 @Test(priority = 101)
 				void DepartmentSummaryRejected() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Department Summary Rejected dashboard count match with Detailed Report Count Verification");
@@ -3581,7 +3581,7 @@ public class AuditorStatutory extends BasePage {
 			    	
 				}
 				
-				 //@Test(priority = 102)
+				 @Test(priority = 102)
 				void DepartmentSummaryNotApplicable() throws InterruptedException, IOException
 				{
 					test = extent.startTest("Department Summary Not Applicable dashboard count match with Detailed Report Count Verification");

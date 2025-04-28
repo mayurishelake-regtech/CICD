@@ -126,7 +126,7 @@ public class ApprovalInCritical extends BasePage {
 	
 	}
 	
-/*	@Test(priority = 1)
+	@Test(priority = 1)
 	void Entities() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Entities");
@@ -189,8 +189,8 @@ public class ApprovalInCritical extends BasePage {
 		extent.endTest(test);
 		extent.flush();
 	}
-	*/
-	//@Test(priority = 3)
+	
+	@Test(priority = 3)
 	void CompliancesCountMatch() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Count by Clicking on 'Compliances'");
@@ -250,7 +250,7 @@ public class ApprovalInCritical extends BasePage {
 	}
 	
 	
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	void clickUsersInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("'Users' Count by Clicking on 'Users'");
@@ -310,7 +310,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	void SummaryofOverdueCompliances() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Summary of Overdue Compliances Internal");
@@ -360,7 +360,7 @@ public class ApprovalInCritical extends BasePage {
 		
 	}
 	
-	//@Test(priority = 7)
+	@Test(priority = 7)
 	void NotCompleted_PieChart() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Completion Status - 'Not Completed' Count Verification");
@@ -454,7 +454,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 8)
+@Test(priority = 8)
 	void ClosedTimely_PieChart() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart -Completion Status - 'Closed Timely'' Count Verification");
@@ -548,7 +548,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 9)
+	@Test(priority = 9)
 	void ClosedDelayed_PieChart() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart -Completion Status - 'Closed Delayed' Count Verification");
@@ -642,7 +642,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 10)
+	@Test(priority = 10)
 	void NotApplicable_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Completion Status - 'Not Applicable' Count Verification");
@@ -737,7 +737,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-//	@Test(priority = 11)
+	@Test(priority = 11)
 	void Overdue_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status - 'Overdue' Count Verification");
@@ -835,7 +835,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 12)
+	@Test(priority = 12)
 	void dueToday_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'dueToday' Count Verification");
@@ -932,7 +932,7 @@ public class ApprovalInCritical extends BasePage {
 	}
 	
 	
- //  @Test(priority = 13)
+   @Test(priority = 13)
 	void PFR_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status - 'Pending For Review' Count Verification");
@@ -1035,7 +1035,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-//	@Test(priority = 14)
+	@Test(priority = 14)
 	void inProgress_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart -  Not Completed Status-  'In Progress' Count Verification");
@@ -1136,7 +1136,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-//	@Test(priority = 15)
+	@Test(priority = 15)
 	void Rejected_PieChartInternal() throws InterruptedException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status - 'Rejected' Count Verification");
@@ -1628,8 +1628,6 @@ public class ApprovalInCritical extends BasePage {
 		extent.endTest(test);
 		extent.flush();
 	}
-	
-	
 	
 	
 	
@@ -2286,7 +2284,7 @@ public class ApprovalInCritical extends BasePage {
 		}
 		
 		
-//	@Test(priority = 0)
+//	//@Test(priority = 0)
 	void DepartmentSummaryInternal() throws InterruptedException, IOException
 	{
 		Thread.sleep(500);		
@@ -2411,7 +2409,7 @@ public class ApprovalInCritical extends BasePage {
 		extent.flush();
 	}
 	
-	@Test(priority = 25)
+@Test(priority = 25)
 	void ClosedTimely_PieChartPeriod() throws InterruptedException
 	{
 		test = extent.startTest("Period-Pie Chart - Completion Status - 'Closed Timely' Count Verification");

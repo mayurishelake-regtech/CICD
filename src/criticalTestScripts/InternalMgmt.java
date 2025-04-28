@@ -130,7 +130,7 @@ public class InternalMgmt extends BasePage {
 		}
 	}
 	
-   //@Test(priority = 1)
+   @Test(priority = 1)
 	void Entities() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Entities");
@@ -142,7 +142,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 
-   //@Test(priority = 2)
+   @Test(priority = 2)
 	void LocationCount() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Location");
@@ -153,7 +153,7 @@ public class InternalMgmt extends BasePage {
 		//extent.flush();
 	}
 	
-//@Test(priority = 3)
+@Test(priority = 3)
 	void clickCategoriesInternal() throws InterruptedException
 	{
 		test = extent.startTest(" Count by Clicking on 'Categories'");
@@ -206,7 +206,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 5)
+	@Test(priority = 5)
 		void ClickCompliancesInternal() throws InterruptedException, IOException
 		{
 			test = extent.startTest("'Compliances' Count by Clicking on 'Compliances'");
@@ -270,7 +270,7 @@ public class InternalMgmt extends BasePage {
 			extent.endTest(test);
 			extent.flush();
 		}
-//@Test(priority = 7)
+@Test(priority = 7)
 	void clickUsersInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("'Users' Count by Clicking on 'Users'");
@@ -331,7 +331,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 8)
+	@Test(priority = 8)
 	void SummaryofOverdueCompliances() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Summary of Overdue Compliances Internal");
@@ -382,7 +382,7 @@ public class InternalMgmt extends BasePage {
 		
 	}
 	
-	//@Test(priority = 10)
+	@Test(priority = 10)
 	void ClosedTimely_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Closed Timely' Count Verification");
@@ -477,7 +477,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 11)
+@Test(priority = 11)
 	void ClosedDelayed_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Closed Delayed' Count Verification");
@@ -572,7 +572,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 12)
+@Test(priority = 12)
 	void NotCompleted_PieChart() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Not Completed' Count Verification");
@@ -666,7 +666,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 13)
+@Test(priority = 13)
 	void NotApplicable_PieChartIN() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Completion Status- 'Not Applicable' Count Verification");
@@ -761,7 +761,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 		
-//@Test(priority = 14)
+@Test(priority = 14)
 	void Overdue_PieChartInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'Overdue' Count Verification");
@@ -856,7 +856,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 15)
+@Test(priority = 15)
 	void dueToday_PieChartInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart -Not Completed Status- 'dueToday' Count Verification");
@@ -954,7 +954,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 	
-	//@Test(priority = 16)
+	@Test(priority = 16)
 	void PFR_PieChartInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status-  'Pending for Review' Count Verification");
@@ -1051,7 +1051,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 17)
+@Test(priority = 17)
 	void inProgress_PieChartInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status-  'In Progress' Count Verification");
@@ -1150,7 +1150,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 	
-//@Test(priority = 18)
+@Test(priority = 18)
 	void Rejected_PieChartInternal() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Pie Chart - Not Completed Status- 'Rejected' Count Verification");
@@ -1249,7 +1249,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 19)
+@Test(priority = 19)
 	void BargraphBSECriticalStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Bar Graph - 'Internal Audit' Count Verification with 'Critical' risk");
@@ -1347,7 +1347,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 20)
+	@Test(priority = 20)
 	void BargraphBSEHighStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Bar Graph - 'Internal Audit' Count Verification with 'High' risk");
@@ -1446,7 +1446,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 21)
+	@Test(priority = 21)
 	void BargraphBSEMediumStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Bar Graph - 'Internal Audit' Count Verification with 'Medium' risk");
@@ -1543,7 +1543,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 22)
+	@Test(priority = 22)
 	void BargraphBSELowStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Bar Graph - 'Internal Audit' Count Verification with 'LOW' risk");
@@ -1639,7 +1639,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 23)
+	@Test(priority = 23)
 	void RiskSummaryCriticalInternal() throws InterruptedException, IOException
 	{
 	
@@ -1763,7 +1763,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 	
-	//@Test(priority =24)
+	@Test(priority =24)
 	void RiskSummaryHighInternal() throws InterruptedException, IOException
 	{		
 		test = extent.startTest("Risk Summary - 'High' Count Verification");
@@ -1891,7 +1891,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-   //@Test(priority =25)
+   @Test(priority =25)
 	void RiskSummaryMediumStatutory() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Risk Summary - 'Medium' Count Verification");
@@ -2009,8 +2009,7 @@ public class InternalMgmt extends BasePage {
 		extent.endTest(test);
 		extent.flush();
 	}
-	
-   //@Test(priority = 26)
+@Test(priority = 26)
 	void RiskSummaryLowStatutory() throws InterruptedException, IOException
 	{		
 		test = extent.startTest("Risk Summary - 'Low' Count Verification");
@@ -2130,7 +2129,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority =27)
+	@Test(priority =27)
 	void DepartmentSummaryInternal() throws InterruptedException, IOException
 	{
 		Thread.sleep(3000);	
@@ -2286,7 +2285,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 28)
+	@Test(priority = 28)
 	void ClosedTimely_PieChartPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - 'Closed Timely' Count Verification");
@@ -2397,7 +2396,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 29)
+	@Test(priority = 29)
 	void ClosedDelayed_PieChartPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - 'Closed Delayed' Count Verification");
@@ -2510,7 +2509,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 30)
+	@Test(priority = 30)
 	void NotCompleted_PieChartPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - 'Not Completed' Count Verification");
@@ -2622,7 +2621,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 31)
+	@Test(priority = 31)
 	void NotApplicable_PieChartPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - Completion Status- 'Not Applicable' Count Verification");
@@ -2737,7 +2736,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-//@Test(priority = 38)
+@Test(priority = 38)
 	void Upcoming_PieChartPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart -Completion Status Status- ' Upcoming' Count Verification");
@@ -2869,7 +2868,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 	
-	//@Test(priority = 32)
+	@Test(priority = 32)
 	void Overdue_PieChartInternalPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - Not Completed Status-'Overdue' Count Verification");
@@ -2986,7 +2985,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 33)
+	@Test(priority = 33)
 	void dueToday_PieChartPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - Not Completed Status-'due Today' Count Verification");
@@ -3106,7 +3105,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 	
-	//@Test(priority = 34)
+	@Test(priority = 34)
 	void PFR_PieChartInternalPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart -Not Completed Status- 'Pending For Review' Count Verification");
@@ -3222,7 +3221,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	//@Test(priority = 35)
+	@Test(priority = 35)
 	void InProgress_PieChartInternalPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - Not Completed Status - 'in Progress' Count Verification");
@@ -3345,7 +3344,7 @@ public class InternalMgmt extends BasePage {
 	}
 	
 
-//@Test(priority = 37)
+@Test(priority = 37)
 	void Rejected_PieChartInternalPeriod() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Period-Pie Chart - Not Completed Status- 'Rejected' Count Verification");
@@ -3460,7 +3459,7 @@ public class InternalMgmt extends BasePage {
 		extent.flush();
 	}
 	
-	/*@Test(priority = 59) 
+	@Test(priority = 59) 
 	void DetailedReportIn() throws InterruptedException, IOException
 	{
 		test = extent.startTest("Detailed Report -Internal Count Verification");
@@ -3495,7 +3494,7 @@ public class InternalMgmt extends BasePage {
 				extent.endTest(test);
 				extent.flush();
 	}
-	*/
+	
 	@Test(priority = 78)
 	void NCcompletionVsNCOverdueIn() throws InterruptedException {
 		test=extent.startTest("Performer Summary Completion Status(Not Completed) and Not Completed Status graph count Verification");
