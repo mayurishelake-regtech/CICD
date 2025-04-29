@@ -12,11 +12,10 @@
 	    <version>3.141.0</version>
 	</dependency>
 	<dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.8.0</version> <!-- or latest stable -->
-        <scope>test</scope>
-    </dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
@@ -32,12 +31,6 @@
     <version>5.1.1</version>
 </dependency>
 
-	<dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>7.7.0</version>
-  <scope>test</scope>
-</dependency>
 	<dependency>
 	    <groupId>com.relevantcodes</groupId>
 	    <artifactId>extentreports</artifactId>
