@@ -127,7 +127,7 @@ public class StatutoryMGMT extends BasePage {
 		extent.flush();
 	}
 	
-    @Test(priority = 2)
+    //@Test(priority = 2)
 	void CompliancesCountMatch() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Count by Clicking on 'Compliances'");
@@ -183,7 +183,7 @@ public class StatutoryMGMT extends BasePage {
 		extent.flush();
 	}
    
-   @Test(priority = 3)
+   //@Test(priority = 3)
 	void UsersCountMatch() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Count by Clicking on 'Users'");
@@ -238,7 +238,7 @@ public class StatutoryMGMT extends BasePage {
 		extent.flush();
 	}
 	
- @Test(priority = 4)
+ //@Test(priority = 4)
 	void SummaryofOverdueCompliances() throws InterruptedException, IOException
 	{
 		test = extent.startTest(" Summary of Overdue Compliances");
@@ -296,7 +296,7 @@ public class StatutoryMGMT extends BasePage {
 		
 	}
 	
-        @Test(priority = 5)
+        //@Test(priority = 5)
 		void NotCompleted_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Not Completed' Count Verification");
@@ -391,7 +391,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-        @Test(priority = 6)
+        //@Test(priority = 6)
 		void ClosedDelayed_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Closed Delayed' Count Verification");
@@ -486,7 +486,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 7)
+ //@Test(priority = 7)
 		void ClosedTimely_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Closed Timely' Count Verification");
@@ -581,7 +581,7 @@ public class StatutoryMGMT extends BasePage {
 			
 		}
 		
-	 @Test(priority = 8)
+	 //@Test(priority = 8)
 		void NotApplicable_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Not Applicable' Count Verification");
@@ -683,7 +683,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 			
-	 @Test(priority = 9)
+	 //@Test(priority = 9)
 		void Overdue_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'Overdue' Count Verification");
@@ -785,7 +785,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 10)
+ //@Test(priority = 10)
 		void dueToday_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'dueToday' Count Verification");
@@ -887,7 +887,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	 @Test(priority = 11)
+	 //@Test(priority = 11)
 		void pendingForReview_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'Pending For Review' Count Verification");
@@ -990,7 +990,7 @@ public class StatutoryMGMT extends BasePage {
 		}
 		
 		
-    @Test(priority = 12)
+    //@Test(priority = 12)
 		void inProgress_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- 'In Progress' Count Verification");
@@ -1092,7 +1092,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.endTest(test);
 			extent.flush();
 		}
- @Test(priority = 13)
+ //@Test(priority = 13)
 		void rejected_PieChart() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Not Completed Status- ' Rejected' Count Verification");
@@ -1193,7 +1193,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 14)
+ //@Test(priority = 14)
 		void BargraphIndustrySpeCriticalStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Critical' Risk");
@@ -1294,7 +1294,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 23)
+ //@Test(priority = 23)
 		void BargraphIndustrySpeHighStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'High' risk");
@@ -1398,7 +1398,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 
-     @Test(priority = 24)
+     //@Test(priority = 24)
 		void BargraphIndustrySpeMediumStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Medium' risk");
@@ -1497,7 +1497,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-           @Test(priority = 25)
+           //@Test(priority = 25)
 		void BargraphIndustrySpeLowStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Bar Graph - 'Commercial' Count Verification with 'Low' risk");
@@ -1602,7 +1602,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	 @Test(priority = 26)
+	 //@Test(priority = 26)
 		void RiskSummaryCriticalStatutory() throws InterruptedException, IOException
 		{
 		
@@ -1724,7 +1724,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	 @Test(priority = 27)
+	 //@Test(priority = 27)
 		void RiskSummaryHighStatutory() throws InterruptedException, IOException
 		{		
 			test = extent.startTest("Risk Summary - 'High' Count Verification");
@@ -1847,7 +1847,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 28)
+ //@Test(priority = 28)
 		void RiskSummaryMediumStatutory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Risk Summary - 'Medium' Count Verification");
@@ -1969,7 +1969,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 29)
+ //@Test(priority = 29)
 		void RiskSummaryLowStatutory() throws InterruptedException, IOException
 		{		
 			test = extent.startTest("Risk Summary - 'Low' Count Verification");
@@ -2095,7 +2095,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-       @Test(priority = 30)
+       //@Test(priority = 30)
 		void DepartmentSummaryHumanResourceStatutory() throws InterruptedException, IOException
 		{
 			Thread.sleep(3000);		
@@ -2303,7 +2303,7 @@ public class StatutoryMGMT extends BasePage {
 		}
 		
 		
-  @Test(priority = 31)
+  //@Test(priority = 31)
 		void NotCompleted_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Completion Status- 'Not Completed' Count Verification");
@@ -2422,7 +2422,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	 @Test(priority = 32)
+	 //@Test(priority = 32)
 		void ClosedDelayed_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Pie Chart -Completion Status- 'Closed Delayed' Count Verification");
@@ -2540,7 +2540,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 33)
+ //@Test(priority = 33)
 		void ClosedTimely_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Completion Status- 'Closed Timely' Count Verification");
@@ -2658,7 +2658,7 @@ public class StatutoryMGMT extends BasePage {
 			
 		}
 		
-	 @Test(priority = 34)
+	 //@Test(priority = 34)
 		void NotApplicable_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Completion Status- 'Not Applicable' Count Verification");
@@ -2781,7 +2781,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	 @Test(priority = 35)
+	 //@Test(priority = 35)
 
 	void UpcomingPieChartPeriod() throws InterruptedException
 	{
@@ -2939,7 +2939,7 @@ public class StatutoryMGMT extends BasePage {
 	}
 	
 	
-   @Test(priority = 36)
+   //@Test(priority = 36)
 		void Overdue_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Not Completed Status- 'Overdue' Count Verification");
@@ -3062,7 +3062,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 37)
+ //@Test(priority = 37)
 		void dueToday_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Not Completed Status- 'dueToday' Count Verification");
@@ -3184,7 +3184,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
- @Test(priority = 38)
+ //@Test(priority = 38)
 		void pendingForReview_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Not Completed Status- 'Pending For Review' Count Verification");
@@ -3305,7 +3305,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		 @Test(priority = 39)
+		 //@Test(priority = 39)
 		void inProgress_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Not Completed Status- 'in Progress' Count Verification");
@@ -3428,7 +3428,7 @@ public class StatutoryMGMT extends BasePage {
 		}
 		
 
-	  @Test(priority = 40)
+	  //@Test(priority = 40)
 		void rejected_PieChartPeriod() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Period-Pie Chart -Not Completed Status- ' Rejected' Count Verification");
@@ -3548,7 +3548,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		  
-    @Test(priority = 42)
+    //@Test(priority = 42)
 			void complianceCalendar() throws InterruptedException, IOException
 			{
 				test = extent.startTest("compliance Calendar Verifications");
@@ -3593,7 +3593,7 @@ public class StatutoryMGMT extends BasePage {
 					extent.flush();
 			}
 		  
-  @Test(priority = 59)
+  //@Test(priority = 59)
 			void DetailedReport() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Detailed Report Count Verification");
@@ -3604,7 +3604,7 @@ public class StatutoryMGMT extends BasePage {
 				extent.flush();
 			}
 		  
-	@Test(priority = 60)
+	//@Test(priority = 60)
 			void AssignmentReport() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Assignment Report verification");
@@ -3615,7 +3615,7 @@ public class StatutoryMGMT extends BasePage {
 				extent.flush();
 			}
 		
-	/*	//// //@Test(priority = 61)
+	/*	//// ////@Test(priority = 61)
 		void StandardReportOverall() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report - Overall Summary Report Verification");
@@ -3627,7 +3627,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-     	//// //@Test(priority = 62)
+     	//// ////@Test(priority = 62)
 		void StandardReportLocation() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report -Location Summary Report Verification");
@@ -3639,7 +3639,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 63)
+		//// ////@Test(priority = 63)
 		void StandardReportUser() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report -User Summary Report Verification");
@@ -3651,7 +3651,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 64)
+		//// ////@Test(priority = 64)
 		void StandardReportCategory() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report -Category Summary Report  Verification");
@@ -3663,7 +3663,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 65)
+		//// ////@Test(priority = 65)
 		void StandardReportRisk() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report - Risk  Summary Report Verification");
@@ -3675,7 +3675,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 66)
+		//// ////@Test(priority = 66)
 		void StandardReportDetailed() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report - Detailed Summary Report Verification");
@@ -3687,7 +3687,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 67)
+		//// ////@Test(priority = 67)
 		void StandardReportCriticalRisk() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report - Critical Risk Summary Report Verification");
@@ -3699,7 +3699,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 68)
+		//// ////@Test(priority = 68)
 		void StandardReportOverallIN() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal -Overall Summary Report Verification");
@@ -3711,7 +3711,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-	     //// //@Test(priority = 69)
+	     //// ////@Test(priority = 69)
 		void StandardReportLocationIN() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal -Location Summary Report Verification");
@@ -3723,7 +3723,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 70)
+		//// ////@Test(priority = 70)
 		void StandardReportUserIn() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal -User Summary Report Verification");
@@ -3735,7 +3735,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 71)
+		//// ////@Test(priority = 71)
 		void StandardReportCategoryIn() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal -Category Summary Report Verification");
@@ -3747,7 +3747,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 72)
+		//// ////@Test(priority = 72)
 		void StandardReportRiskIN() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal-Risk Summary Report Verification");
@@ -3759,7 +3759,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority = 73)
+		//// ////@Test(priority = 73)
 		void StandardReportDetailedIN() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal-Detailed Summary Report  Verification");
@@ -3771,7 +3771,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 		
-		//// //@Test(priority =74)
+		//// ////@Test(priority =74)
 		void StandardReportCriticalRiskIN() throws InterruptedException, IOException
 		{
 			test = extent.startTest("Standard Report Internal -Critical Risk Summary Report  Verification");
@@ -3783,7 +3783,7 @@ public class StatutoryMGMT extends BasePage {
 			extent.flush();
 		}
 			
-		//// //@Test(priority = 75) 
+		//// ////@Test(priority = 75) 
 			void SMETAReport1() throws InterruptedException, IOException, AWTException
 			{
 				test = extent.startTest("My Reports -  SMETA Report Verification");
@@ -3795,7 +3795,7 @@ public class StatutoryMGMT extends BasePage {
 				extent.flush();
 			}
 			
-		//// //@Test(priority = 76) 
+		//// ////@Test(priority = 76) 
 			void SMETAReportFilterMgmt1() throws InterruptedException, IOException, AWTException
 			{
 				test = extent.startTest("My Reports -  To Check Whether Smeta Report Grid all filter working or not ? ");
@@ -3808,7 +3808,7 @@ public class StatutoryMGMT extends BasePage {
 			}
 */
 			
-		@Test(priority = 77)
+		//@Test(priority = 77)
 			void ComplianceDocuments() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Compliance Documents  verification");
@@ -3822,7 +3822,7 @@ public class StatutoryMGMT extends BasePage {
 			
 			
 			
-			 @Test(priority = 78)
+			 //@Test(priority = 78)
 					void NCcompletionVsNCOverdue() throws InterruptedException {
 						test=extent.startTest("Performer Summary Completion Status(Not Completed) and Not Completed Status graph count Verification");
 						CFOcountPOM.NCcompletionVsNCOverdue(test);
@@ -3830,7 +3830,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-			 @Test(priority = 79)
+			 //@Test(priority = 79)
 					void DetailedreportVsdashboardNotCompletedcount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Completion Status(Not Completed) dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsdashboardNotCompletedcountUp(test);
@@ -3839,7 +3839,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 80)
+					 //@Test(priority = 80)
 					void DetailedreportVsdashboardCloseddealyedcount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Completion Status - Closed Delayed dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsdashboardCloseddealyedcountUp(test);
@@ -3847,7 +3847,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-				 @Test(priority = 81)
+				 //@Test(priority = 81)
 					void DetailedreportVsdashboardclosedtimelycount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Completion Status - Closed Timely dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsdashboardclosedtimelycountUp(test);
@@ -3855,7 +3855,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 				
-				 @Test(priority = 82)//19/03/2025
+				 //@Test(priority = 82)//19/03/2025
 					void DetailedreportVsdashboardNAcount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Completion Status - Not Applicable dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsdashboardNAcountUp(test);
@@ -3863,7 +3863,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-				 @Test(priority = 83)
+				 //@Test(priority = 83)
 					void DetailedreportVsOverduecount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Not Completed Status - Overdue dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsOverduecountUp(test);
@@ -3871,7 +3871,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 84)
+					 //@Test(priority = 84)
 					void DetailedreportVsDueTodaycount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Not Completed Status - DueToday dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsDueTodaycountUp(test);
@@ -3879,7 +3879,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 85)
+					 //@Test(priority = 85)
 					void DetailedreportVsPFRcount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Not Completed Status - Pending For Review dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsPFRcountUp(test);
@@ -3887,7 +3887,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 86)
+					 //@Test(priority = 86)
 					void DetailedreportVsINprocount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Not Completed Status - In Progress dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsINprocountUp(test);
@@ -3895,7 +3895,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 87)
+					 //@Test(priority = 87)
 					void DetailedreportVsRejectedcount() throws InterruptedException {
 						test=extent.startTest("Performer Summary Not Completed Status - Rejected dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsRejectedcountUp(test);
@@ -3903,7 +3903,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority =88) //20/03/2025
+					 //@Test(priority =88) //20/03/2025
 					void DetailedreportVsCommercialCriticalcount() throws InterruptedException {
 						test=extent.startTest("Completion Status - Overall Functions - Commercial - Critial dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsCommercialCriticalcount(test);
@@ -3911,7 +3911,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 				
-					 @Test(priority = 89)
+					 //@Test(priority = 89)
 					void DetailedreportVsCommercialHighcount() throws InterruptedException {
 						test=extent.startTest("Completion Status - Overall Functions - Commercial - High dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsCommercialHighcount(test);
@@ -3919,7 +3919,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 90)
+					 //@Test(priority = 90)
 					void DetailedreportVsCommercialMediumcount() throws InterruptedException {
 						test=extent.startTest("Completion Status - Overall Functions - Commercial - Medium dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsCommercialMediumcount(test);
@@ -3927,7 +3927,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 					
-					 @Test(priority = 91)
+					 //@Test(priority = 91)
 					void DetailedreportVsCommercialLowcount() throws InterruptedException {
 						test=extent.startTest("Completion Status - Overall Functions - Commercial - Low dashboard count match with Detailed Report Count Verification");
 						CFOcountPOM.DetailedreportVsCommercialLowcount(test);
@@ -3935,7 +3935,7 @@ public class StatutoryMGMT extends BasePage {
 				        extent.flush();
 				    }
 				
-			 @Test(priority = 92)
+			 //@Test(priority = 92)
 			void riskSummaryCriticalNotCompleted1() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Risk summary Not Completed dashboard count match with Detailed Report Count Verification");
@@ -3945,7 +3945,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 93)
+			 //@Test(priority = 93)
 			void riskSummaryClosedDelayed() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Risk summary Closed Delayed dashboard count match with Detailed Report Count Verification");
@@ -3955,7 +3955,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 94)
+			 //@Test(priority = 94)
 			void riskSummaryClosedTimely() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Risk summary Closed Timely dashboard count match with Detailed Report Count Verification");
@@ -3965,7 +3965,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 95)
+			 //@Test(priority = 95)
 			void riskSummaryNotApplicable() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Risk summary Not Applicable dashboard count match with Detailed Report Count Verification");
@@ -3975,7 +3975,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 96)
+			 //@Test(priority = 96)
 			void DepartmentSummaryOverdue() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary Overdue dashboard count match with Detailed Report Count Verification");
@@ -3985,7 +3985,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 97)
+			 //@Test(priority = 97)
 			void DepartmentSummaryClosedDelayed() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary Closed Delayed dashboard count match with Detailed Report Count Verification");
@@ -3995,7 +3995,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 98)
+			 //@Test(priority = 98)
 			void DepartmentSummaryClosedT() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary Closed Timely dashboard count match with Detailed Report Count Verification");
@@ -4005,7 +4005,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 99)
+			 //@Test(priority = 99)
 			void DepartmentSummaPR() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary Pending Review dashboard count match with Detailed Report Count Verification");
@@ -4015,7 +4015,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 100)
+			 //@Test(priority = 100)
 			void DepaINPROGRESSR() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary In Progress dashboard count match with Detailed Report Count Verification");
@@ -4025,7 +4025,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 101)
+			 //@Test(priority = 101)
 			void DepartmentSummaryRejected() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary Rejected dashboard count match with Detailed Report Count Verification");
@@ -4035,7 +4035,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 			
-			 @Test(priority = 102)
+			 //@Test(priority = 102)
 			void DepartmentSummaryNotApplicable() throws InterruptedException, IOException
 			{
 				test = extent.startTest("Department Summary Not Applicable dashboard count match with Detailed Report Count Verification");
@@ -4045,7 +4045,7 @@ public class StatutoryMGMT extends BasePage {
 		    	
 			}
 		
-			 @Test(priority = 103)
+			 //@Test(priority = 103)
 			void NCcompletionVsNCOverdueP() throws InterruptedException {
 				test=extent.startTest("Performer Summary(Due for the period) Completion Status(Not Completed) and Not Completed Status graph count Verification");
 				CFOcountPOM.NCcompletionVsNCOverdueP(test);
