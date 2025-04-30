@@ -3,25 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="criticalTestScripts.StatutoryMGMT">
+      <class name="criticalTestScripts.InternalMgmt">
         <methods>
-          <include name="RiskSummaryLowStatutory"/>
-          <include name="setBrowser"/>
-          <include name="DepartmentSummaPR"/>
-          <include name="DepartmentSummaryHumanResourceStatutory"/>
-          <include name="ClosedDelayed_PieChartPeriod"/>
-          <include name="complianceCalendar"/>
           <include name="Login"/>
+          <include name="DepartmentSummaryInternal"/>
+          <include name="setBrowser"/>
           <include name="browserClosing"/>
-          <include name="RiskSummaryMediumStatutory"/>
-          <include name="riskSummaryClosedDelayed"/>
-          <include name="UpcomingPieChartPeriod"/>
-          <include name="RiskSummaryHighStatutory"/>
           <include name="Closing"/>
-          <include name="RiskSummaryCriticalStatutory"/>
-          <include name="riskSummaryClosedTimely"/>
         </methods>
-      </class> <!-- criticalTestScripts.StatutoryMGMT -->
+      </class> <!-- criticalTestScripts.InternalMgmt -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
