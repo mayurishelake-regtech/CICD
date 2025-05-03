@@ -2135,12 +2135,12 @@ public class ApprovalInCritical extends BasePage {
 			Admin = Admin.replaceAll(" ","");									//Removing all white spaces from string. 
 			int IndustrySpeCritical = Integer.parseInt(Admin);	
 			
-			String NotCompleted = CFOcountPOM.clickAdminOverdueAIn().getText();			//Reading the Overdue value of Human Resource
+			String NotCompleted = CFOcountPOM.clickComplianceIsecOverdueDemo().getText();			//Reading the Overdue value of Human Resource
 		//	NotCompleted = NotCompleted.replaceAll(" ","");									//Removing all white spaces from string. 
 			int Overdue = Integer.parseInt(NotCompleted);						
 			if(Overdue > 0)
 			{Thread.sleep(2000);
-				CFOcountPOM.clickAdminOverdueAIn().click();
+				CFOcountPOM.clickComplianceIsecOverdueDemo().click();
 				ApprovalcountPOM.RiskGraphCountIn1( test, "Overdue", Overdue, "Statutory");
 			}
 			else
@@ -2194,13 +2194,13 @@ public class ApprovalInCritical extends BasePage {
 			
 			Thread.sleep(3000);
 			Thread.sleep(3000);
-			String PendingReview = CFOcountPOM.clickAccountPendingReviewApp().getText();	//Reading the Pending For Review value of Human Resource
+			String PendingReview = CFOcountPOM.clickAccountPendingReview().getText();	//Reading the Pending For Review value of Human Resource
 			PendingReview = PendingReview.replaceAll(" ","");								//Removing all white spaces from string. 
 			int Pending_Review = Integer.parseInt(PendingReview);						
 			if(Pending_Review > 0)
 			{
 				Thread.sleep(3000);
-				CFOcountPOM.clickAccountPendingReviewApp().click();
+				CFOcountPOM.clickAccountPendingReview().click();
 				ApprovalcountPOM.RiskGraphCountIn( test, "Pending For Review", Pending_Review, "Statutory");
 			}
 			else
@@ -2231,14 +2231,14 @@ public class ApprovalInCritical extends BasePage {
 		Thread.sleep(500);
 			
 			Thread.sleep(3000);
-				String Rejeccted = CFOcountPOM.clickAdminPendingReview().getText();	//Reading the Pending For Review value of Human Resource
+				String Rejeccted = CFOcountPOM.clickAdminInRejected().getText();	//Reading the Pending For Review value of Human Resource
 				//NotApplicable = NotApplicable.replaceAll(" ","");	
 				Thread.sleep(3000);//Removing all white spaces from string. 
 				int Rejected = Integer.parseInt(Rejeccted);						
 				if(Rejected > 0)
 				{
 					Thread.sleep(3000);
-					CFOcountPOM.clickAdminPendingReview().click();
+					CFOcountPOM.clickAdminInRejected().click();
 					ApprovalcountPOM.RiskGraphCountIn( test, "Rejected", Rejected, "Statutory");
 				}
 				else

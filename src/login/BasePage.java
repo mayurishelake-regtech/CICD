@@ -221,7 +221,7 @@ import performer.OverduePOM;
 		Thread.sleep(3000);
 		}else if(text.equalsIgnoreCase("StatutoryExcludingChecklist")) {
 			Thread.sleep(3000);
-			CFOcountPOM.RefreshNow().click();
+			//CFOcountPOM.RefreshNow().click();
 			Thread.sleep(3000);
 			ApprovalcountPOM.Filters().click();
 			Thread.sleep(2000);

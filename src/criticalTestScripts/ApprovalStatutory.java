@@ -1648,8 +1648,8 @@ public class ApprovalStatutory extends BasePage {
 			ApprovalcountPOM.selectOptionFromDropDown_bs(roc2, "Closed Timely");
 			
 			Thread.sleep(4000);
-		//	int RiskCritical_DueToday = Integer.parseInt(CFOcountPOM.clickRiskCriticalDueToday().getText());	//Reading the High Risk value of Not Completed compliance
-		/*	if(RiskCritical_DueToday > 0)
+			int RiskCritical_DueToday = Integer.parseInt(CFOcountPOM.clickRiskCriticalDueToday().getText());	//Reading the High Risk value of Not Completed compliance
+		if(RiskCritical_DueToday > 0)
 			{
 				CFOcountPOM.clickRiskCriticalDueToday().click();			//Clicking on Not Completed compliances bar of High risk.  
 				Thread.sleep(2000);
@@ -1659,7 +1659,7 @@ public class ApprovalStatutory extends BasePage {
 			{
 				test.log(LogStatus.PASS, "'Critical - Due Today' Count = "+RiskCritical_DueToday);
 			}
-			*/
+			
 			
 			
 			Thread.sleep(3000);
@@ -1678,7 +1678,7 @@ public class ApprovalStatutory extends BasePage {
 			Thread.sleep(2000);
 			
 			Thread.sleep(8000);
-			int total = RiskCritical_NotCompleted + RiskCritical_ClosedDelayed + RiskCritical_ClosedTimely + RiskCritical_NotApplicable;//+RiskCritical_DueToday;				//Calculating the values to match with High value of Labour.
+			int total = RiskCritical_NotCompleted + RiskCritical_ClosedDelayed + RiskCritical_ClosedTimely + RiskCritical_NotApplicable+RiskCritical_DueToday;				//Calculating the values to match with High value of Labour.
 			Thread.sleep(5000);	
 			if(IndustrySpeCritical == total)
 			{
@@ -1902,7 +1902,7 @@ public class ApprovalStatutory extends BasePage {
 			ApprovalcountPOM.selectOptionFromDropDown_bs(roc2, "Closed Timely");
 			Thread.sleep(3000);
 			
-		/*	int RiskMedium_DueToday = Integer.parseInt(CFOcountPOM.clickRiskMediumDueToday().getText());	//Reading the High Risk value of Not Completed compliance
+			int RiskMedium_DueToday = Integer.parseInt(CFOcountPOM.clickRiskMediumDueToday().getText());	//Reading the High Risk value of Not Completed compliance
 			if(RiskMedium_DueToday > 0)
 			{
 				Thread.sleep(500);
@@ -1914,7 +1914,7 @@ public class ApprovalStatutory extends BasePage {
 			{
 				test.log(LogStatus.PASS, "'Medium - Due Today' Count = "+RiskMedium_DueToday);
 			}
-			*/
+			
 			Thread.sleep(3000);
 			int RiskMedium_NotApplicable = Integer.parseInt(CFOcountPOM.clickRiskMediumNotApplicable().getText());	//Reading the High Risk value of Not Completed compliance
 			if(RiskMedium_NotApplicable > 0)
@@ -1929,7 +1929,7 @@ public class ApprovalStatutory extends BasePage {
 			}
 			
 			Thread.sleep(8000);
-			int total = RiskMedium_NotCompleted + RiskMedium_ClosedDelayed + RiskMedium_ClosedTimely + RiskMedium_NotApplicable;//+RiskMedium_DueToday;				//Calculating the values to match with High value of Labour.
+			int total = RiskMedium_NotCompleted + RiskMedium_ClosedDelayed + RiskMedium_ClosedTimely + RiskMedium_NotApplicable+RiskMedium_DueToday;				//Calculating the values to match with High value of Labour.
 			Thread.sleep(5000);	
 			if(IndustrySpeCritical == total)
 			{
@@ -2022,7 +2022,7 @@ public class ApprovalStatutory extends BasePage {
 			WebElement roc3 = getDriver().findElement(By.cssSelector("#highcharts-6 > svg > g.highcharts-legend > g > g > g.highcharts-legend-item.highcharts-column-series.highcharts-color-undefined.highcharts-series-2 > rect"));			
 			  roc3.click();
 			Thread.sleep(3000);
-			/*int RiskLow_DueToday = Integer.parseInt(CFOcountPOM.clickRiskLowDueToday().getText());	//Reading the High Risk value of Not Completed compliance
+			int RiskLow_DueToday = Integer.parseInt(CFOcountPOM.clickRiskLowDueToday().getText());	//Reading the High Risk value of Not Completed compliance
 			if(RiskLow_DueToday > 0)
 			{
 				Thread.sleep(500);
@@ -2035,7 +2035,7 @@ public class ApprovalStatutory extends BasePage {
 				test.log(LogStatus.PASS, "'Low - Due Today' Count = "+RiskLow_DueToday);
 			}
 			
-			*/
+			
 			Thread.sleep(3000);
 			int RiskLow_NotApplicable = Integer.parseInt(CFOcountPOM.clickRiskLowNotApplicable().getText());	//Reading the High Risk value of Not Completed compliance
 			if(RiskLow_NotApplicable > 0)
@@ -2050,7 +2050,7 @@ public class ApprovalStatutory extends BasePage {
 			}
 			
 			Thread.sleep(8000);
-			int total = RiskLow_NotCompleted + RiskLow_ClosedDelayed + RiskLow_ClosedTimely + RiskLow_NotApplicable;//+RiskLow_DueToday;				//Calculating the values to match with High value of Labour.
+			int total = RiskLow_NotCompleted + RiskLow_ClosedDelayed + RiskLow_ClosedTimely + RiskLow_NotApplicable+RiskLow_DueToday;				//Calculating the values to match with High value of Labour.
 			Thread.sleep(5000);	
 			if(IndustrySpeCritical == total)
 			{
